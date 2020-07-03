@@ -1,0 +1,136 @@
+/* General features */
+
+body {
+  font-family: 'Century Gothic';
+  text-align: justify;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #002126;
+  width: 110%;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+p {
+  margin: 15px 0px 9px 0px;
+}
+
+h1 {
+  font-size: 20;
+  font-weight: bold;
+  margin: 70px 0px 40px 0px;
+}
+
+h2 {
+  font-size: 16;
+  font-weight: 575;
+  margin: 50px 0px 30px 0px;
+}
+
+h3 {
+  font-size: 10;
+  font-weight: 525;
+  font-style: italic;
+  margin: 40px 0px 20px 0px;
+}
+
+/* Table of contents */
+
+#TOC {
+  top: 5%;
+  margin-left: 3%;
+  position: fixed;
+  width: 420px;
+  border: none;
+  background: url('reuleaux_heptagon.svg');
+  padding-top: 220px !important;
+  padding-right: 70px !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.tocify {
+  border: none;
+  color: #117c8d;
+  border-radius: 0px;
+}
+.list-group-item.active {
+  color: #117c8d;
+  border-left: solid;
+  border-right: 0pt;
+  border-color: #117c8d;
+  background-color: white;
+}
+.list-group-item:hover {
+  color: white;
+  background-color: #117c8d;
+  border-left: solid;
+  border-right: 0pt;
+  border-color: #117c8d;
+}
+.tocify-extend-page {
+  display: none;
+}
+.list-group-item.active:focus, .list-group-item.active:hover {
+  z-index: 2;
+  color: #fff;
+  background-color: #117c8d;
+  border-color: #117c8d;
+}
+
+/* Buttons for tabset pills */
+
+.btn {
+  border-width: 0 0px 0px 0px;
+  font-weight: normal;
+  text-transform: full-size-kana;
+  color: #117c8da6;
+}
+.btn-default {
+  color: #117C8Da6;
+  background-color: #117c8d1e;
+  border-color: #ffffff;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
+  background-color: #117C8Da6;
+  font-size: 14px;
+}
+
+/* ---------- Links ----------------- */
+
+a {
+  color: #117C8D;
+}
+a:hover {
+  color: #117C8D;
+  color: #117c8d52;
+}
+
+/* GitHub Corner (By T. Holman.) */
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-25deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-25deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

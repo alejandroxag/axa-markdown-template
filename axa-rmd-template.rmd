@@ -1,0 +1,77 @@
+---
+title: <center><font size=30; font-weight=775>Title</font></center>
+author: <center>Alejandro Álvarez</center>
+date: <center>`r Sys.setlocale('LC_TIME','English'); format(Sys.time(), '%B %d, %Y')`</center>
+output:
+   html_document:
+      dev: 'svg'
+      toc: true
+      toc_depth: 3
+      toc_float:
+         collapse: true
+         smooth_scroll: true
+      includes:
+         in_header: header.html
+         after_body: footer.html
+      css: style.css
+pagetitle: 'Page Title'
+---
+
+```{r setup, include=FALSE}
+
+##### R Markdown global options #####
+
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE, include = TRUE, fig.align = 'center', out.width = '100%')
+
+##### libraries #####
+
+library(tidyverse)
+library(extrafont)
+loadfonts(device = 'win') # The first time you install this package, you have to execute font_import()
+
+##### Colors #####
+
+colors_pal <- c('#004170','#098d9c','#cc003a','#b2d600','#ffcc00','#00c954','#00bf9f','#00a9bf','#6f00bf','#b02c88')
+
+##### Dummy function #####
+
+do_nothing <- function(df) { return(df) }
+
+```
+
+# Section
+
+[Text]
+
+## Subsection
+
+[Text]
+
+### Sub^2section {.tabset .tabset-fade .tabset-pills}
+
+[Text]
+
+<br>
+
+```{r, results='asis'}
+
+for (i in 1:3) {
+   
+   cat('\n')
+
+   cat('#### Sub^3section', i, '\n')
+
+   cat('Some content: ', i,'.')
+
+   cat('\n')
+}
+
+```
+
+# Acknowledgements
+
+* GitHub Corner by [Tim Holman.](http://tholman.com)
+
+* Icons taken from [Font Awesome 4.7.0., created by Font Awesome](https://fontawesome.com/v4.7.0/icons/).
+
+* Reuleaux heptagon image was constructed using [this code](https://github.com/scipython/scipython-maths/blob/master/reuleaux/make_reuleaux_construction.py), written by [Christian Hill](https://github.com/scipython).
