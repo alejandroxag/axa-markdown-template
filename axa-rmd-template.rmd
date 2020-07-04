@@ -32,6 +32,7 @@ loadfonts(device = 'win') # The first time you install this package, you have to
 ##### Colors #####
 
 colors_pal <- c('#004170','#098d9c','#cc003a','#b2d600','#ffcc00','#00c954','#00bf9f','#00a9bf','#6f00bf','#b02c88')
+font_color <- '#002126'
 
 ##### Dummy function #####
 
